@@ -9,6 +9,7 @@ Installation / Running
 
 To clone and run this repository you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
 
+```bash
 # Clone this repository
 git clone https://github.com/ericliu1986/electron-react-material-template.git
 # Go into the repository
@@ -19,7 +20,7 @@ npm install
 npm run build
 # Run the app
 npm run electron-start
-
+```
 
 License
 -------
