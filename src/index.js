@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Router, browserHistory } from 'react-router';
+import routes from './routes';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import './styles.scss';
+import 'font-awesome/css/font-awesome.css';
+import 'flexboxgrid/css/flexboxgrid.css';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+require('./favicon.ico');
+
+injectTapEventPlugin();
+
+ReactDOM.render(<Router routes={routes} history={browserHistory} />, document.getElementById('root'));
 registerServiceWorker();
