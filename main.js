@@ -16,11 +16,18 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
   // and load the index.html of the app.
-  mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, './build/index.html'),
-    protocol: 'file:',
-    slashes: true
-  }))
+  const pkg = require('./package.json') // 引用package.json
+
+  //check if in the dev mode
+  if (pkg.DEV) {
+    mainWindow.loadURL("http://localhost:3000/")
+  } else {
+    mainWindow.loadURL(url.format({
+      pathname: path.join(__dirname, './build/index.html'),
+      protocol: 'file:',
+      slashes: true
+    }))
+  }
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
