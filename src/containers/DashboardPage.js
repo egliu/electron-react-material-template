@@ -56,7 +56,7 @@ const DashboardPage = () => {
 
       <div className="row">
         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-md m-b-15">
-          <NewOrders data={Data.dashBoardPage.newOrders}/>
+          <NewOrders caption="NewOrders"/>
         </div>
 
         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 m-b-15">
