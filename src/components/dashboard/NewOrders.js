@@ -4,6 +4,12 @@ import Paper from 'material-ui/Paper';
 import {white, purple600, purple500} from 'material-ui/styles/colors';
 import {LineChart, Line, ResponsiveContainer} from 'recharts';
 import {typography} from 'material-ui/styles';
+const electron = window.require('electron');
+const ipcRenderer = electron.ipcRenderer;
+
+ipcRenderer.on('action', (event, message) => {
+  alert('received message is: ' + message);
+})
 
 const NewOrders = (props) => {
 
