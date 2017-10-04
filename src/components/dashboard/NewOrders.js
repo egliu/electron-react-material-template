@@ -45,7 +45,7 @@ const NewOrders = ({value}) => {
             <XAxis />
             <YAxis domain={['auto', 'auto']}/>
             <Tooltip />
-            <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} dot={false} isAnimationActive={false}/>
           </LineChart>
         </ResponsiveContainer>
       </div>
