@@ -11,7 +11,7 @@ To clone and run this repository you'll need Git and Node.js (which comes with n
 
 ```bash
 # Clone this repository
-git clone https://github.com/ericliu1986/electron-react-material-template.git
+git clone https://github.com/egliu/electron-react-material-template.git
 # Go into the repository
 cd electron-react-material-template
 # Install dependencies
