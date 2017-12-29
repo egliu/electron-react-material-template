@@ -30,5 +30,6 @@ MIT
 -------
 
 关于详细的解释，请参考我在知乎上的文章：
-1. https://zhuanlan.zhihu.com/p/29173253
-2. https://zhuanlan.zhihu.com/p/29852605
+1. https://zhuanlan.zhihu.com/p/29164782
+2. https://zhuanlan.zhihu.com/p/29173253
+3. https://zhuanlan.zhihu.com/p/29852605
